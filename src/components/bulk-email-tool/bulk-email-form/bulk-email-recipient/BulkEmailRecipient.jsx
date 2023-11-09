@@ -53,6 +53,7 @@ export default function BulkEmailRecipient(props) {
         {
           // additional modes
           courseModes
+          && courseModes.length > 1
           && courseModes.map((courseMode) => (
             <Form.Checkbox
               key="track:{courseMode.slug}"
